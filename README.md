@@ -1,2 +1,3 @@
-# community
+# Community
+
 The InftyAI community.
