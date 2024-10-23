@@ -1,0 +1,26 @@
+name: Community Membership Request
+description: Request membership to InftyAI Community
+labels: [ "kind/documentation" ]
+title: "REQUEST: New membership for <your-GH-handle>"
+body:
+- type: markdown
+  attributes:
+    value: |
+      Thank you for filling out this membership request!
+- id: github
+  type: input
+  attributes:
+    label: GitHub Username
+    placeholder: e.g. @example_user
+  validations:
+    required: true
+- id: contributions
+  type: textarea
+  attributes:
+    label: List of contributions to the Kubernetes project
+    placeholder: |
+      - Projects I am involved with
+      - PRs authored / reviewed
+      - Issues responded to
+  validations:
+    required: true
