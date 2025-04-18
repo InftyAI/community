@@ -1,0 +1,31 @@
+name: New Project Request
+description: Request to create a new project to InftyAI Community
+labels: [ "documentation" ]
+title: "REQUEST: New project named <project-name>"
+body:
+- type: markdown
+  attributes:
+    value: |
+      Thank you for filling out this project request!
+- id: project
+  type: input
+  attributes:
+    label: Project Name
+    placeholder: e.g. @example_project
+  validations:
+    required: true
+- id: reasons
+  type: textarea
+  attributes:
+    label: The rationality for creating this project
+  validations:
+    required: true
+- id: maintainers
+  type: textarea
+  attributes:
+    label: The maintainers of this project
+    placeholder: |
+      - Approvers
+      - Reviewers
+  validations:
+    required: true
